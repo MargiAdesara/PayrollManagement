@@ -33,6 +33,7 @@ CREATE TABLE `User` (
 ); 
 
  
+ 
 Project Table: 
 
 CREATE TABLE `User` ( 
@@ -45,6 +46,7 @@ CREATE TABLE `User` (
 
 ); 
 
+ 
  
 
 PayGrade Table: 
@@ -65,6 +67,8 @@ PRIMARY KEY  (‘PayGrade_Id’)
 
 ); 
 
+ 
+ 
  
 
 Employee Table: 
@@ -91,6 +95,8 @@ PRIMARY KEY  (‘Emp_Id’)
 
  
 
+
+
 Salary Table: 
 
 CREATE TABLE `Employee` ( 
@@ -113,6 +119,8 @@ PRIMARY KEY  (‘Transaction_Id’)
 
 ); 
 
+ 
+ 
  
 
 Tweets Table: 
@@ -141,6 +149,8 @@ PRIMARY KEY  (‘Tweet_Id’)
 
 ); 
 
+
+
  
 
 Tweet_URL Table: 
@@ -158,6 +168,8 @@ PRIMARY KEY  ('TweetURL_Id')
 ); 
 
  
+
+
 
  
 
@@ -185,6 +197,8 @@ REFERENCES Tweets(‘Tweet_Id’);
 
  
 
+
+
 Constraint for Employee Table: 
 
 ALTER TABLE `Employee’ 
@@ -194,6 +208,8 @@ ADD CONSTRAINT `EmployeeID_fk1’ FOREIGN KEY (‘Project_Id’)
 REFERENCES Project(‘Project_Id’); 
 
  
+
+
 
 Constraint for Salary Table: 
 
